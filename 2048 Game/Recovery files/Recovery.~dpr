@@ -1,0 +1,29 @@
+program Recovery;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+Type
+   TItem = Packed Record
+    Nickname: TNickname;
+    Points: Integer;
+    Steps: Integer;
+    TimeSpent: Integer;
+    Date: TDateTime
+  End;
+
+  FItems = File of TItem;
+
+Var
+  F: FItems;
+  Item: TItem;
+
+begin
+  AssignFile(F,
+
+
+
+end.
+ 

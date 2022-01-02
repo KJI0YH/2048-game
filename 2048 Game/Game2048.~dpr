@@ -1,0 +1,25 @@
+program Game2048;
+
+uses
+  Forms,
+  uMain in 'Units\uMain.pas' {frmMain},
+  uDrawingField in 'Units\uDrawingField.pas',
+  uGameWindow in 'Units\uGameWindow.pas' {frmGame},
+  uGameLogic in 'Units\uGameLogic.pas',
+  uFiles in 'Units\uFiles.pas',
+  uRecords in 'Units\uRecords.pas' {frmRecords},
+  uAddNickname in 'Units\uAddNickname.pas',
+  uEndGame in 'Units\uEndGame.pas' {frmEnd};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.Title := '2048';
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(TfrmGame, frmGame);
+  Application.CreateForm(TfrmNickName, frmNickName);
+  Application.CreateForm(TfrmRecords, frmRecords);
+  Application.CreateForm(TfrmEnd, frmEnd);
+  Application.Run;
+end.
